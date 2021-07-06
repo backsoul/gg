@@ -11,7 +11,7 @@ gg.alert('Puedes ser baneado.')
 goto START
 
 ::START::
-menu = gg.choice ({'Cooldown Hack','Battle Spell CD Hack','Hack Skin Hero','Energy Fany','Habilidad Hack','3D Map','Hack CD Recall'}) 
+menu = gg.choice ({'Cooldown Hack','Battle Spell CD Hack','Hack Skin Hero','Energy Fany','Habilidad Hack','3D Map','Hack CD Recall','Exit'}) 
 if menu == 1 then goto CD end
 if menu == 2 then goto UI end
 if menu == 3 then goto YT end
@@ -19,6 +19,7 @@ if menu == 4 then goto OR end
 if menu == 5 then goto MM end
 if menu == 6 then goto DR end
 if menu == 7 then goto RC end
+if menu == 8 then goto exit end
 goto hidden
 
 
