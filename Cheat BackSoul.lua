@@ -6185,9 +6185,7 @@ gg.toast('success')
 goto START 
 
 ::DR::
-gg.alert('Silahkan Dicoba Gan')
-gg.alert('Jangan Lupa Subscribe Facta Saiyan')
-menu = gg.choice ({'3D Map 1','kembali normal 1','3D Map 2','Kembali normal 2'})
+menu = gg.choice ({'3D Map 1','regresar a la normalidad 1','3D Map 2','regresar a la normalidad 2'})
 if menu == 1 then goto D1 end
 if menu == 2 then goto Dn end
 if menu == 3 then goto D2 end
