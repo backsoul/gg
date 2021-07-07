@@ -20,17 +20,7 @@ if menu == 5 then goto MM end
 if menu == 6 then goto DR end
 if menu == 7 then goto RC end
 if menu == 8 then goto exit end
-goto hidden
-
-
-
-::hidden::
-gg.setVisible(false)
-a = gg.choice({"Cheat"})
-
-::exit::
-gg.toast('Estas por irte:c') 
-os.exit() 
+ 
 
 ::CD::
 menu = gg.choice ({'Lancelot','Jhonson','Gusion', 'Zhask','Layla','Zilong','Karina','Alucard','Cyclops','Fanny','Nana','Argus','Balmond','Hayabusa','Odette','Miya','Kaja','Franco','Vexana','Bane','Uranus','Lesley','Chou','Roger','Rafaela','Grok','Hanabi','Akai','Hellcurt','Eudora','Gord','Martis','Alice','Natalia','Thamuz','Claude','Karie','Kimmy','Bruno','Harith','Harley','Sun','Gatot Kaca','Irithel','Trigeal','Moskov','Valir','Aldous','Leomord','Aurora','Vale','Badang','Minshittar','Khufra','Saber','Terizla','Ruby','Angela','Selena','Dyrroth','Badang','LapuLapu','Change','Hylos','Granger','Lunox'}) 
