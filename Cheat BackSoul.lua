@@ -1,13 +1,10 @@
-gg.toast('Modded BackSoul')
 if gg.BUILD < 5511 then 
 gg.alert('Necesita una versión de GameGuardian para ejecutar este script. GG mínimo v.8.30.0') 
 gg.toast('Actualice su GameGuardian si desea utilizar scripts')
 end 
-if gg.isVisible(true) then 
-   gg.setVisible(false) 
-   end 
+
+
 gg.clearResults()
-gg.alert('Puedes ser baneado.') 
 goto START
 
 ::START::
@@ -19,8 +16,22 @@ if menu == 4 then goto OR end
 if menu == 5 then goto MM end
 if menu == 6 then goto DR end
 if menu == 7 then goto RC end
-if menu == 8 then goto exit end
+if menu == 8 then goto EXIT end
  
+::EXIT::
+while true do
+  if gg.isVisible(true) then
+    XGCK = 1
+    gg.setVisible(false)
+  end
+  gg.clearResults()
+  if XGCK == 1 then
+     goto START 
+  end
+end
+
+
+
 
 ::CD::
 menu = gg.choice ({'Lancelot','Jhonson','Gusion', 'Zhask','Layla','Zilong','Karina','Alucard','Cyclops','Fanny','Nana','Argus','Balmond','Hayabusa','Odette','Miya','Kaja','Franco','Vexana','Bane','Uranus','Lesley','Chou','Roger','Rafaela','Grok','Hanabi','Akai','Hellcurt','Eudora','Gord','Martis','Alice','Natalia','Thamuz','Claude','Karie','Kimmy','Bruno','Harith','Harley','Sun','Gatot Kaca','Irithel','Trigeal','Moskov','Valir','Aldous','Leomord','Aurora','Vale','Badang','Minshittar','Khufra','Saber','Terizla','Ruby','Angela','Selena','Dyrroth','Badang','LapuLapu','Change','Hylos','Granger','Lunox'}) 
