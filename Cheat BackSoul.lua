@@ -23,10 +23,7 @@ while true do
   if gg.isVisible(true) then
     XGCK = 1
     gg.setVisible(false)
-  end
-  gg.clearResults()
-  if XGCK == 1 then
-     goto START 
+    gg.clearResults()
   end
 end
 
